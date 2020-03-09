@@ -1,2 +1,4 @@
 <!--pages/home/home.wxml-->
 <text class="title">第一天学习微信小程序课程</text>
+
+<view>第一天</view>
