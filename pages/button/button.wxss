@@ -1,0 +1,6 @@
+/* pages/button/button.wxss */
+
+.active{
+  background: pink;
+  color: deeppink;
+}

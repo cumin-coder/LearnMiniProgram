@@ -1,0 +1,15 @@
+<!--pages/button/button.wxml-->
+
+<button>点击肖莉来到我身边</button>
+
+<!-- size -->
+<button size="mini">点击肖莉来到我身边</button>
+
+<!-- type="颜色值"-->
+<button type="primary">点击送肖莉来到我身边</button>
+<button type="warn" size="mini">点击送肖莉来到我身边</button>
+
+<!-- hover-class -->
+<button hover-class="active"
+hover-start-time="1000"
+hover-stay-time="2000">点击把肖莉的粉色内衣脱下</button>

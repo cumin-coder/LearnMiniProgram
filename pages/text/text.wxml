@@ -1,0 +1,26 @@
+<!--pages/text/text.wxml-->
+
+<!-- text组件的使用 
+text是一个行内元素 类似于HTML中的span标签
+-->
+<text>text1\n</text>
+<text>text2\n</text>
+
+
+<!-- text组件的selectable属性 -->
+<text selectable>长按可选中\n</text>
+
+
+<!-- text组件的space属性 -->
+<!-- 
+ensp => 中文字符空格一半大小
+emsp => 中文字符空格大小
+nbsp => 根据字体设置的空格大小
+
+ -->
+<text space="emsp">EMSP Hello World\n</text>
+<text space="ensp">ENSP Hello World\n</text>
+<text space="nbsp">NBSP Hello World\n</text>
+
+<!-- text组件的decode属性 是否解码-->
+<text decode>8 &gt; 6</text>

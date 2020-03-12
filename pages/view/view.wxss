@@ -1,0 +1,30 @@
+/* pages/view/view.wxss */
+
+.bg-One{
+  background: pink;
+}
+
+.bg-Two{
+  background: deeppink;
+}
+
+.clickSwitch{
+  width: 100px;
+  height: 100px;
+  background: #5555;
+  margin-top: 50px;
+  }
+
+  .switchBg{
+    background: red
+  }
+
+  .parentClick{
+    width: 200px;
+    height: 200px;
+    background: green
+  }
+
+  .parentActive{
+    background: #fff
+  }

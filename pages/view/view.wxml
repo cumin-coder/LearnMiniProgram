@@ -1,0 +1,22 @@
+<!--pages/view/view.wxml-->
+
+
+<!-- 
+view组件：块级元素
+特点：独占一行
+ -->
+<view class="bg-One">我是VIEW元素 One</view>
+<view class="bg-Two">我是VIEW元素 Two</view>
+
+<!-- hover-stop-propagation ->阻止子元素点击后会触发父元素的点击<-  you konw? -->
+<view class="parentClick" hover-class="parentActive" hover-start-time="1500" hover-stay-time="2500">
+
+    <view class="clickSwitch" 
+    hover-class="switchBg" 
+    hover-stop-propagation="{{false}}"
+    hover-start-time="1000"
+    hover-stay-time="2000"
+    >
+    点我点我</view >
+
+</view>
