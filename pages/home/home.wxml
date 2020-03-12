@@ -1,2 +1,27 @@
 <!--pages/home/home.wxml-->
-<text class="title">第一天学习微信小程序课程</text>
+
+<!-- 1. 小程序的数据绑定 ： {{}} - Mastache -->
+<view>姓名：{{name}}</view>
+<view>年龄：{{age}}</view>
+
+<!-- 2. 小程序的多项数据绑定 使用 wx:for -->
+<view wx:for="{{students}}">{{item.name}} -- {{item.age}}</view>
+
+<!-- 3. 小程序数据与页面进行交互 -->
+
+<view>{{count}}</view>
+<button bindtap="puls">切换</button>
+<button bindtap="subtract">-</button>
+
+<!-- 获取授权 -->
+
+<!-- 获取用户信息的第二种方式 -->
+<button bindgetuserinfo="getuserinfo" open-type='getUserInfo'>获取授权</button>
+
+<!-- 展示用户信息的方式 -->
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+
+
+<!-- 商品数据 -->
+<view wx:for="{{list}}">{{item.title}}</view>
