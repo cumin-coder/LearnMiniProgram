@@ -1,0 +1,51 @@
+<!--pages/image/image.wxml-->
+
+<view>Exercise ------------------------------- mode ------------------------------</view>
+
+<!-- 5. mode 图片裁剪、缩放的模式 -->
+
+<!-- 默认 ： scaleToFill -->
+<image src="/assets/slideshow/8.png" mode="scaleToFill" />
+
+<!-- aspectFit -->
+<view class="container" wx:for="{{array}}">
+  <view>
+    {{item.mode}}
+  </view>
+  <image style="width: 200px; height: 200px; background-color: #eeeeee;" src="{{src}}" mode="{{item.mode}}" />
+
+</view>
+
+
+
+
+<!-- 
+  image组件
+  1.可以是单标签或双标签
+  2.是行内块级元素 dispay: inline-block
+  3.image标签有自己的默认宽高 width:320px height: 240px
+ -->
+<image/>
+
+<!-- 1.src属性 
+  可以加载远程图片或本地图片（绝对路径或相对路径）
+ -->
+
+<!-- 本地图片(相对路径 || 绝对路径) -->
+<!-- 相对路径 -->
+<image src="../../assets/slideshow/8.png" />
+<!-- 绝对路径 -->
+<image src="/assets/slideshow/8.png" />
+
+<!-- 远程图片 -->
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" />
+
+<!-- 2.开启长按图片显示识别小程序码菜单 show-menu-by-longpress -->
+<image src="/assets/slideshow/8.png" show-menu-by-longpress/>
+
+
+<!-- 
+ 3.bindload 当图片加载完成
+ 4.lazy-load 图片懒加载 当图片进入视口时再加载 增加性能 用户体验加倍
+  -->
+<image wx:for="{{5}}" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" bindload="eventhandle" lazy-load="{{true}}" />

@@ -1,0 +1,32 @@
+<!-- input -->
+<input/>
+
+
+<!-- value属性 输入框的初始内容 -->
+<input value="A pig" />
+
+<!-- type类型 -->
+
+<!-- 文本键盘 -->
+<input type="text" confirm-type="next" />
+
+<!-- 数字键盘 -->
+<input type="number" />
+
+<!-- 身份证键盘 -->
+<input type="idcard" />
+
+<!-- 带小数点的键盘 -->
+<input type="digit" />
+
+<!-- placeholder 输入框为空时占位符 -->
+<input placeholder="请输入文字..."></input>
+
+
+<!-- 
+bindinput 输入时触发
+bindfocus 聚焦时触发
+bindblur 失去焦点时触发
+ -->
+
+<input bindinput="clickInput" bindfocus="clickFocus" bindblur="clickBlur"></input>
