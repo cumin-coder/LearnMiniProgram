@@ -1,23 +1,33 @@
 // pages/home/home.js
-Component({
-  /**
-   * 组件的属性列表
-   */
-  properties: {
-
-  },
-
-  /**
-   * 组件的初始数据
-   */
+Page({
   data: {
-
+    timer: new Date().toLocaleString(),
+    showColor: false,
+    score: 59,
+    movies: ["罗宾汉·起源", "王牌特工·黄金圈"]
   },
+  clickSwitch() {
+    this.setData({
+      showColor : !this.data.showColor
+    })
 
-  /**
-   * 组件的方法列表
-   */
-  methods: {
-
+   
+  },
+  onLoad() {
+    setInterval(() => {
+      this.setData({
+        timer: new Date().toLocaleString()
+      })
+    }, 1000)
+  },
+  handlerSwitchScore(){
+    this.setData({
+      score: this.data.score += 5
+    })
+    if (this.data.score >= 150) {
+      this.data.score = 150
+    }
   }
+
+
 })

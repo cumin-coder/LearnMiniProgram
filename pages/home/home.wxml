@@ -1,2 +1,62 @@
 <!--pages/home/home.wxml-->
-<text class="title">第一天学习微信小程序课程</text>
+
+<!-- Mustache语法的使用 -->
+
+<!-- 先来设置一个时间 -->
+<view>北京时间:{{timer}}</view>
+
+<!-- 切换颜色 -->
+<button bindtap="clickSwitch">点击切换</button>
+<view class="{{showColor ? 'color' : '' }}">我是无辜的</view>
+<!-- <map show-location enable-overlooking></map> -->
+
+
+<view>---------wx:if 代码测试----------</view>
+
+
+<!-- 分数的显示级别 -->
+<view wx:if="{{score >= 150}}">满分</view>
+<view wx:elif="{{score >= 98}}">优秀</view>
+<view wx:elif="{{score >= 75}}">良好</view>
+<view wx:elif="{{score >= 60}}">及格</view>
+<view wx:else>不及格</view>
+<button bindtap="handlerSwitchScore">切换分数</button>
+
+
+<!-- 
+
+wx:if="{{false}}"  与 hidden 的区别
+使用wx:if 隐藏时会直接销毁当前组件
+使用hidden隐藏时只会把当前组件设置一个 display: none
+
+
+使用场景
+当元素频繁使用时就使用hidden属性，好处在与不会频繁创建与销毁组件
+当元素较低使用时就用wx:if属性
+
+ -->
+ <view hidden="{{true}}">我的属性是hidden</view>
+ <view wx:if="{{false}}">我的属性是wx:if</view>
+
+
+<view>---------wx:for 代码测试----------</view>
+
+<!-- wx:for 基本使用 -->
+<!-- <view wx:for="{{movies}}">{{item}} {{index}}</view> -->
+
+<!-- block的使用 只作用于判断条件时 -->
+<!-- <block wx:for="{{movies}}">
+<view>{{item}} {{index}}</view>
+</block> -->
+
+
+<!-- wx:for 另起别名 wx:for-item="newName" wx:for-index="newName" -->
+<!-- <block wx:for="{{movies}}" wx:for-item="listMovies" wx:for-index="listIndex">
+<view>{{listMovies}} {{listIndex}}</view>
+</block> -->
+
+<!-- wx:key="value" key的主要作用是为了高效的作用与虚拟DOM -->
+
+<view wx:for="{{movies}}" wx:for-item="list" wx:key="index">
+{{list}}</view>
+

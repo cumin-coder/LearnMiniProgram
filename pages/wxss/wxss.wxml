@@ -1,0 +1,12 @@
+
+
+<!-- 使用px作为样式 -->
+<view class="container1">px</view>
+
+<!-- 使用rpx作为样式 -->
+<view class="container2">rpx</view>
+
+<!-- 行内样式（又名：内联样式） -->
+<text class="box1" id="id_box1">CODERABSTRACT</text>
+
+

@@ -1,0 +1,21 @@
+/* pages/wxss/wxss.wxss */
+
+.container1 {
+  width: 100px;
+  height: 100px;
+  background: pink;
+}
+
+.container2 {
+  width: 200rpx;
+  height: 200rpx;
+  background: purple;
+}
+
+.box1 {
+  color: green !important;
+}
+
+#id_box1 {
+  color: deeppink;
+}
