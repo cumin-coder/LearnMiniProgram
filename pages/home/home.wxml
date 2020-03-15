@@ -1,2 +1,20 @@
-<!--pages/home/home.wxml-->
-<text class="title">第一天学习微信小程序课程</text>
+<!-- 事件冒泡与事件捕获 -->
+
+<view id="outer" class="handlerTap1" bind:tap="handlerTap1" capture-bind:tap="captureBindHandlerTap1">
+  <view id="middle" class="handlerTap2" catch:tap="handlerTap2" capture-bind:tap="captureBindHandlerTap2">
+    <view id="inner" class="handlerTap3" bind:tap="handlerTap3" capture-bind:tap="captureBindHandlerTap3"></view>
+  </view>
+</view>
+
+
+<!-- 事件的对象 -->
+<view class="view" bind:touchstart="start" bind:touchend="end" bind:touchmove="move" bind:touchcancel="cancel" bind:tap="tap" bind:longpress="press" id="exercise">
+</view>
+
+
+<!--  取出对象中的某个属性-->
+<view class="container">
+  <block wx:for="{{lists}}" wx:key="index">
+    <view class="items {{currentActive === index ? 'active' : ''}}" bind:tap="clickName" data-item="{{item}}" data-index="{{index}}">{{item}}</view>
+  </block>
+</view>
