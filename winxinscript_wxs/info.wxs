@@ -1,0 +1,13 @@
+// 定义变量
+var name = "coderabstract"
+var age = 17
+var calcNum = function (num1, num2) {
+  return num1 + num2
+}
+
+// 使用Common.js的导出语法
+module.exports = {
+  name: name,
+  age: age,
+  calcNum: calcNum,
+}

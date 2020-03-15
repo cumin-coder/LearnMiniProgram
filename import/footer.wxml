@@ -1,0 +1,4 @@
+<view>底部</view>
+<view>profiles</view>
+
+<template name="ide">ide</template>

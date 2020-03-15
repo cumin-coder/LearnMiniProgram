@@ -1,0 +1,10 @@
+<!--import/template/import.wxml-->
+
+
+<template name="header">
+  <view>{{name}}</view>
+  <view>{{age}}</view>
+  <view>{{gender}}</view>
+  <view>{{hobby}}</view>
+  <view>{{boyfriend}}</view>
+</template>

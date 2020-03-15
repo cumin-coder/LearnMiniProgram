@@ -1,0 +1,11 @@
+<!--pages/header/header.wxml-->
+
+<!-- 定义一个组件方法，必须每个组件有属于自己的name属性 -->
+<template is="header" data="{{name: '李梓维', age : 17, gender: 'male', hobby: 'basketball'}}"/>
+
+<!-- 使用组件的方法 使用is属性 -->
+<!-- <template is="header" data="{{name: '李梓维', age : 17, gender: 'male', hobby: 'basketball'}}"/> -->
+
+<!-- 使用import方式导入 -->
+<import src="/import/import.wxml"/>
+

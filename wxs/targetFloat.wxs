@@ -1,0 +1,13 @@
+function float(floatNumber, num) {
+  //默认取小数点后两位小数
+  var number = num || 2
+  if (typeof floatNumber === "string") {
+    return parseFloat(floatNumber).toFixed(floatNumber)
+  }
+  return floatNumber.toFixed(number)
+}
+
+// Common.js 方式导出
+module.exports = {
+  float: float
+}

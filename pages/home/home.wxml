@@ -1,4 +1,32 @@
 <!--pages/home/home.wxml-->
 <text class="title">第一天学习微信小程序课程</text>
+<!-- 导入template -->
+<import src="/import/import.wxml"/>
 
-<view>第一天</view>
+<!--使用include导入  header.wxml-->
+<include src="/import/header.wxml"/>
+
+
+<!-- 使用template is="key: value" -->
+<template is="header" data="{{name: '肖莉', boyfriend: '李梓维'}}"></template>
+
+
+<!--使用include导入 footer.wxml -->
+<include src="/import/footer.wxml"/>
+
+
+<import src="/import/footer.wxml"/>
+<template is="ide"></template>
+
+
+
+
+<!-- 
+总结
+
+
+import: 只能导入 <template/>
+include: 只能导入 <template/> <wxs/> 外的整个代码引入
+
+
+ -->

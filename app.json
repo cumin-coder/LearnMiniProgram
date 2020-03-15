@@ -1,5 +1,7 @@
 {
   "pages": [
+    "winxinscript_wxs/wxs",
     "pages/home/home"
-  ]
+  ],
+  "sitemapLocation": "sitemap43.json"
 }

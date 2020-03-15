@@ -1,0 +1,32 @@
+<!-- 使用JS语法 使用wxs组件 -->
+
+<!-- <wxs module="info">
+  var name = "coderabstract"
+  var age = 17
+  var calcNum = function(num1, num2) {
+    return num1 + num2
+  }
+
+  // 使用Common.js的导出语法
+  module.exports = {
+    name: name,
+    age: age,
+    calcNum: calcNum
+  }
+</wxs> -->
+
+<!-- 单独定义在<wxs>文件导入wxs的方式 -->
+<!-- 不能使用绝对路径导入 -->
+<!-- <wxs src="./info.wxs" module="info"/>
+
+<view>{{info.name}}</view>
+<view>{{info.age}}</view>
+<view>{{info.calcNum(10,20)}}</view> -->
+
+
+<!-- 6.49999999 取小数点后2位 -->
+
+<!-- 引入 -->
+<wxs src="../wxs/targetFloat.wxs" module="dight"/>
+<view>{{dight.float(price,2)}}</view>
+

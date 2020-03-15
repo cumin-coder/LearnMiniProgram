@@ -9,13 +9,23 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false,
 		"coverView": true,
+		"nodeModules": false,
+		"autoAudits": false,
 		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"bundle": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.10.2",
+	"libVersion": "2.10.3",
 	"appid": "wx59d281095f1f34e4",
 	"projectname": "MyProject",
 	"debugOptions": {
