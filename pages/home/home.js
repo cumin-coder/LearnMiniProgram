@@ -1,23 +1,22 @@
 // pages/home/home.js
-Component({
-  /**
-   * 组件的属性列表
-   */
-  properties: {
-
-  },
-
-  /**
-   * 组件的初始数据
-   */
+Page({ 
   data: {
-
+    count: 0,
+    list: ["流行","新款","精选"]
   },
+  increment() {
+    this.setData({
+      count: this.data.count += 1
+    })
+  },
+  tabBarEvents(e){
+    console.log(e)
+  },
+  clickBtn(){
+    //拿到组件对象 通过 this.selectComponent("class/id选择器")
+    const cpnData = this.selectComponent("#cpn")
 
-  /**
-   * 组件的方法列表
-   */
-  methods: {
-
+    // 调用my-sel组件内的方法
+    cpnData.increment(10)
   }
 })

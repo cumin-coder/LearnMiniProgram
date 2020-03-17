@@ -1,0 +1,3 @@
+<!--components/my-cpn/my-cpn.wxml-->
+
+<view class="title">我是my-cpn.wxml</view>

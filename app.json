@@ -1,5 +1,7 @@
 {
   "pages": [
     "pages/home/home"
-  ]
+  ],
+  "usingComponents": {},
+  "sitemapLocation": "sitemap53.json"
 }

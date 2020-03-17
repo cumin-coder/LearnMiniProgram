@@ -1,0 +1,24 @@
+
+/* components/my-tab-control/my-tab-control.wxss */
+
+
+.tab-control{
+  display: flex;
+  height: 45px;
+  line-height: 45px;
+}
+
+.tabBar{
+  text-align: center;
+  flex: 1;
+  font-weight: bold;
+}
+
+.active{
+  color: #f40;
+}
+
+.active text{
+  padding: 20rpx 16rpx;
+  border-bottom: 6rpx solid pink;
+}

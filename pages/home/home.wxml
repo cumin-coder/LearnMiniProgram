@@ -1,2 +1,36 @@
-<!--pages/home/home.wxml-->
-<text class="title">第一天学习微信小程序课程</text>
+<view>
+
+  {{count}}</view>
+<my-event bind:increment="increment" />
+
+
+<!-- tab-control组件练习 -->
+<my-tab-control tabControl="{{list}}" bind:tabBarEvent="tabBarEvents" />
+
+
+<!-- 页面向组件传递\修改数据 -->
+
+<my-sel id="cpn" />
+<button bind:tap="clickBtn">修改组件内的数据</button>
+
+
+
+<!-- 单个插槽的使用 -->
+<my-slot>我是slot</my-slot>
+
+<my-slot>
+  <slider value="50"></slider>
+</my-slot>
+
+
+
+<!-- 多个插槽的使用
+注意：
+    1.要在组件的slot中加上name属性
+    2.要在组件的options:{ multipleSlots: true} 才会显示到界面上
+ -->
+<my-mslot>
+  <button slot="slot1">我是view 您好 HelloWorld</button>
+  <text slot="slot3">我是view 您好 HelloWorld</text>
+  <image slot="slot3" src="https://i2.hdslb.com/bfs/face/fdc7db1a9a2a6e8775002d6bb32744b85dc33055.jpg@150w_150h.jpg"/>
+</my-mslot>

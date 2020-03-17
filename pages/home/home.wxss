@@ -1,5 +1,22 @@
 /* pages/home/home.wxss */
-.title{
+
+.title {
   font-weight: bold;
-  margin-left: 100px;
+  color: red;
+}
+
+.red {
+  color: red;
+}
+
+.pink {
+  color: pink;
+}
+
+.black {
+  color: black;
+}
+
+.green {
+  color: green;
 }

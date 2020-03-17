@@ -1,0 +1,4 @@
+<!--components/my-prop/my-prop.wxml-->
+
+<view class="nameclass">{{name}}</view>
+<view class="ageclass">{{age}}</view>
