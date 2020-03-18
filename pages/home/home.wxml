@@ -1,2 +1,16 @@
 <!--pages/home/home.wxml-->
-<text class="title">第一天学习微信小程序课程</text>
+
+<button>请无视我</button>
+
+<!-- 页面弹窗 -->
+<!--  1.showToast-->
+<button bind:tap="clickShowToast">ClickShowToast</button>
+
+<!-- 2.showModal -->
+<button bind:tap="clickShowModal">ClickShowModal</button>
+
+<!-- 3.showLoading -->
+<button bind:tap="clickShowLoading">ClickShowLoading</button>
+
+<!-- 4.showActionSheet -->
+<button bind:tap="clickShowActionSheet">ClickShowActionSheet</button>
